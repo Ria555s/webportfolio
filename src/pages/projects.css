@@ -1,0 +1,130 @@
+/* ====== SECTION WRAPPER ====== */
+.project-showcase {
+  padding: 60px 20px;
+  background-color: var(--bg); /* dark background */
+  font-family: var(--font-main);
+  color: var(--text-main);
+}
+
+.project-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: var(--accent); /* use accent purple for title */
+}
+
+/* ====== GRID LAYOUT ====== */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ====== CARD ====== */
+.project-card {
+  background: #18042D; /* slightly lighter dark purple */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(168, 85, 247, 0.25); /* subtle purple shadow */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(168, 85, 247, 0.5); /* deeper purple on hover */
+}
+
+/* ====== IMAGE ====== */
+.project-image {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ====== CONTENT ====== */
+.project-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.project-name {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--accent);
+}
+
+.project-description {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+  line-height: 1.4;
+  flex-grow: 1;
+}
+
+/* ====== BUTTONS ====== */
+.project-links {
+  display: flex;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.project-btn {
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Demo Button */
+.demo-btn {
+  background: var(--accent);
+  color: #fff;
+}
+
+.demo-btn:hover {
+  background: #7e22ce; /* darker purple on hover */
+  transform: translateY(-2px);
+}
+
+/* GitHub Button */
+.github-btn {
+  background: #2e1a47; /* subtle dark purple background */
+  color: var(--text-main);
+}
+
+.github-btn:hover {
+  background: #4b1d7b; /* slightly brighter purple */
+  transform: translateY(-2px);
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 480px) {
+  .project-title {
+    font-size: 2rem;
+  }
+  .project-content {
+    padding: 16px;
+  }
+}
+
+
+

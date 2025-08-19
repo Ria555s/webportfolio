@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root {
+  --accent: #a855f7; /* Tailwind's purple-500 */
+  --bg: #0D001F;
+  --text-main: #ffffff;
+  --text-muted: #aaa;
+  --font-main: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg);
+  color: var(--text-main);
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+ 
+  box-shadow:  20px rgba(168, 85, 247, 0.5);
+}
+  .avatar-glow {
+    margin-bottom: 2rem;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
+
+
+.avatar-glow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  width: fit-content;
+  height: fit-content;
+  padding: 20px; /* Optional spacing */
+}
+
+.avatar-background {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(113, 21, 199, 0.6) 0%, rgba(126, 63, 214, 0.9) 70%);
+  box-shadow: 0 0 60px 30px rgba(107, 85, 127, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-img {
+  width: 500px; /* Now you can change image size separately */
+  height: 300px;
+  object-fit: contain;
+  border-radius: 50%;
+}

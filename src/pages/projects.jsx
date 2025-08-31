@@ -1,27 +1,30 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./projects.css";
+import portfolioImg from '../assets/projects/portfolio.png'
+import ecommerceImg from '../assets/projects/ecommerce.png'
+import appointmentImg from '../assets/projects/appointment.png'
 
 // ✅ Rename this to projectData to avoid confusion
 const projectData = [
   {
     title: "Portfolio Website",
     description: "A personal portfolio built with React.",
-    image: "src//assets/projects/portfolio.png",
+    image: portfolioImg,
     link: "https://your-portfolio-link.com",
     github: "https://github.com/yourname/portfolio",
   },
   {
     title: "E-Commerce App",
     description: "A full-stack MERN e-commerce application.",
-    image: "/src/assets/projects/ecommerce.png",
+    image: ecommerceImg,
     link: "https://your-ecommerce-link.com",
     github: "https://github.com/yourname/ecommerce",
   },
   {
     title: "Appointment Application",
     description: "Real-time appointment app using React.",
-    image: "src/assets/projects/appointment.png",
+    image: appointmentImg,
     link: "https://doctor-appointment-app-ksqr.onrender.com/",
     github: "https://github.com/Ria555s/doctor-appointment-app",
   },

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Contact.css";
+import "./contact.css";
 import { Mail, User, MessageSquare, Send } from "lucide-react";
 
 const Contact = () => {
